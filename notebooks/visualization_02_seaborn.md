@@ -434,9 +434,10 @@ Use the `height` and `aspect` to adjust the figure width/height.
 <details><summary>Hints</summary>
 
 - The sum of victims _for each_ hour of the day requires `groupby`. One can create a new column with the hour of the day or pass the hour directly to `groupby`.
+- The groupby operation sets the key that you are grouping on as the index (row labels) of the result. The `reset_index()` method can be used to turn that index into normal dataframe columns.
 - The `.dt` accessor provides access to all kinds of datetime information.
-- `rename` requires a dictionary with a mapping of the old vs new names.
-- A bar plot is in seaborn one of the `catplot` options. 
+- `rename()` requires a dictionary with a mapping of the old to new names.
+- A bar plot is in seaborn one of the `catplot()` options. 
     
 </details>
 

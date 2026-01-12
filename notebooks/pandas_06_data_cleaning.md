@@ -383,14 +383,11 @@ A number of the remaining metadata columns names have the `TX_` and the `_DESCR_
 
 <details><summary>Hints</summary>
     
-- Use the `rename` method and apply the mapping on the `columns`.
-- The input of the `rename` method van be a dictionary or a function. Use the `clean_column_name` as the function to rename the columns. 
-- Make sure to explicitly set the columns= parameter.    
+- To rename columns, we can use the `rename()` method.
+- The input of the `rename()` method can also be a function in addition to a dictionary. When passing a function to `rename()`, pandas will under the hood call this function for each the column name individually, and use the return value as the renamed column name.
+- Make sure to explicitly set the `columns=` parameter.    
     
-__NOTE__ The function `clean_column_name` takes as input a string and returns the string after removing the prefix and suffix. 
-
-- The pandas method `rename` applies this function to each column name individually.    
-- `removeprefix()` and `removesuffix()` are [Python string methods](https://docs.python.org/3/library/stdtypes.html#string-methods) to remove start/trailing characters if present.
+__NOTE__ The function `clean_column_name` takes as input a string and returns the string after removing the prefix and suffix. `removeprefix()` and `removesuffix()` are [Python string methods](https://docs.python.org/3/library/stdtypes.html#string-methods) to remove start/trailing characters if present.
 
 </details>
 
@@ -398,7 +395,13 @@ __NOTE__ The function `clean_column_name` takes as input a string and returns th
 
 ```{code-cell} ipython3
 def clean_column_name(name):
+    """
+    Takes a string and returns it after removing "TX_" and "_DESCR_NL".
+    """
     return name.removeprefix("TX_").removesuffix("_DESCR_NL")
+
+# example to show what the 'clean_column_name' function does
+clean_column_name("TX_DAY_OF_WEEK_DESCR_NL")
 ```
 
 ```{code-cell} ipython3
