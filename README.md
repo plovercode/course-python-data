@@ -2,8 +2,8 @@
 
 This repo contains the source code for the workshop (the notebooks with full
 content) as it is being developed. For the actual course repo, see for
-example [DS-python-data-analysis](https://github.com/jorisvandenbossche/DS-python-data-analysis)
-or [FLAMES-python-data-wrangling](https://github.com/jorisvandenbossche/FLAMES-python-data-wrangling).
+example [DS-python-data-analysis](https://github.com/plovercode/DS-python-data-analysis)
+or [FLAMES-python-data-wrangling](https://github.com/plovercode/FLAMES-python-data-wrangling).
 
 ## Introduction
 
@@ -20,7 +20,7 @@ The course uses Python 3 and some data analysis packages such as Pandas, Numpy a
 
 For detailed instructions to get started on your local machine , see the [setup instructions](./setup.md).
 
-In case you do not want to install everything and just want to try out the course material, use the environment setup by Binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jorisvandenbossche/DS-python-data-analysis/master) and open de notebooks rightaway.
+In case you do not want to install everything and just want to try out the course material, use the environment setup by Binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/plovercode/DS-python-data-analysis/master) and open de notebooks rightaway.
 
 
 ## Contributing
