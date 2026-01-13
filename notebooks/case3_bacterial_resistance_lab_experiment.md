@@ -20,7 +20,7 @@ kernelspec:
 
 +++
 
-In this case study, we will make use of the open data, affiliated to the following [journal article](http://rsbl.royalsocietypublishing.org/content/12/5/20160064):
+In this case study, we will make use of the open data, affiliated to the following [journal article](https://royalsocietypublishing.org/rsbl/article/12/5/20160064/50398/Effects-of-antibiotic-resistance-alleles-on):
 
 >Arias-Sánchez FI, Hall A (2016) Effects of antibiotic resistance alleles on bacterial evolutionary responses to viral parasites. Biology Letters 12(5): 20160064. https://doi.org/10.1098/rsbl.2016.0064
 
@@ -30,7 +30,7 @@ In this case study, we will make use of the open data, affiliated to the followi
 
 +++
 
-Check the full paper on the [web version](http://rsbl.royalsocietypublishing.org/content/12/5/20160064). The study handles:
+Check the full paper on the [web version](https://royalsocietypublishing.org/rsbl/article/12/5/20160064/50398/Effects-of-antibiotic-resistance-alleles-on). The study handles:
 > Antibiotic resistance has wide-ranging effects on bacterial phenotypes and evolution. However, the influence of antibiotic resistance on bacterial responses to parasitic viruses remains unclear, despite the ubiquity of such viruses in nature and current interest in therapeutic applications. We experimentally investigated this by exposing various Escherichia coli genotypes, including eight antibiotic-resistant genotypes and a mutator, to different viruses (lytic bacteriophages). Across 960 populations, we measured changes in population density and sensitivity to viruses, and tested whether variation among bacterial genotypes was explained by their relative growth in the absence of parasites, or mutation rate towards phage resistance measured by fluctuation tests for each phage
 
 ```{code-cell} ipython3
@@ -294,9 +294,9 @@ sns.catplot(data=density_mean, kind="bar",
 
 +++
 
-Check Figure 2 of the original journal paper in the 'correction' part of the <a href="http://rsbl.royalsocietypublishing.org/content/roybiolett/12/5/20160064.full.pdf">pdf</a>:
+Check Figure 2 in the results section of the original <a href="https://royalsocietypublishing.org/rsbl/article/12/5/20160064/50398/Effects-of-antibiotic-resistance-alleles-on#16147318">paper</a>:
 
-<img src="https://royalsocietypublishing.org/cms/attachment/eb511c57-4167-4575-b8b3-93fbcf728572/rsbl20160064f02.jpg" width="500">
+<img src="../img/rsbl20160064f02.jpeg" width="500">
 
 ```{code-cell} ipython3
 falcor.head()
