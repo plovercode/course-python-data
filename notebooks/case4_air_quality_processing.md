@@ -31,7 +31,7 @@ Some of the data files that are available from AirBase were included in the data
 - BETR802: urban traffic site in Antwerp, Belgium
 - BETN029: rural background site in Houtem, Belgium
 
-See http://www.eea.europa.eu/themes/air/interactive/no2
+See https://www.eea.europa.eu/en/topics/in-depth/air-pollution
 
 ```{code-cell} ipython3
 import pandas as pd
