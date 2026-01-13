@@ -5,7 +5,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.16.6
+    jupytext_version: 1.18.1
 kernelspec:
   display_name: Python 3 (ipykernel)
   language: python
@@ -14,7 +14,7 @@ kernelspec:
 
 <p><font size="6"><b> CASE - air quality data of European monitoring stations (AirBase)</b></font></p>
 
-> *© 2025, Joris Van den Bossche and Stijn Van Hoey  (<mailto:jorisvandenbossche@gmail.com>, <mailto:stijnvanhoey@gmail.com>). Licensed under [CC BY 4.0 Creative Commons](http://creativecommons.org/licenses/by/4.0/)*
+> *© 2026, Joris Van den Bossche and Stijn Van Hoey  (<mailto:jorisvandenbossche@gmail.com>, <mailto:stijnvanhoey@gmail.com>). Licensed under [CC BY 4.0 Creative Commons](http://creativecommons.org/licenses/by/4.0/)*
 
 ---
 
@@ -31,7 +31,7 @@ Some of the data files that are available from AirBase were included in the data
 - BETR802: urban traffic site in Antwerp, Belgium
 - BETN029: rural background site in Houtem, Belgium
 
-See http://www.eea.europa.eu/themes/air/interactive/no2
+See https://www.eea.europa.eu/en/topics/in-depth/air-pollution
 
 ```{code-cell} ipython3
 import pandas as pd
