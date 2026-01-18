@@ -28,5 +28,64 @@ In case you do not want to install everything and just want to try out the cours
 Found any typo or have a suggestion, see [how to contribute](./CONTRIBUTING.md).
 
 
+## Development
+
+In addition to the environment.yml, install the following packages:
+
+```
+conda install jupytext jlab-enhanced-cell-toolbar nbdime
+```
+
+Creating the student version materials from this repo:
+
+```
+export COURSE_DIR="DS-python-2021"
+git clone --depth 1 https://github.com/jorisvandenbossche/DS-python-data-analysis.git $COURSE_DIR
+git clone --depth 1 https://github.com/jorisvandenbossche/course-python-data.git course-python-data-clean
+cp course-python-data-clean/notebooks/*.ipynb $COURSE_DIR/_solved/
+cp course-python-data-clean/notebooks/data/ $COURSE_DIR/notebooks/ -r
+cp course-python-data-clean/img/ $COURSE_DIR/ -r
+cp course-python-data-clean/environment.yml $COURSE_DIR/
+cp course-python-data-clean/check_environment.py $COURSE_DIR/
+cd $COURSE_DIR/
+jupyter nbconvert --clear-output _solved/*.ipynb
+./convert_notebooks.sh
+```
+
+
+
+
+```
+export COURSE_DIR="ICES-2022"
+git clone --depth 1 https://github.com/jorisvandenbossche/ICES-python-data.git $COURSE_DIR
+git clone --depth 1 https://github.com/jorisvandenbossche/course-python-data.git course-python-data-clean
+mkdir $COURSE_DIR/_solved/
+cp course-python-data-clean/notebooks/*.ipynb $COURSE_DIR/_solved/
+cp course-python-data-clean/notebooks/data/ $COURSE_DIR/notebooks/ -r
+cp course-python-data-clean/img/ $COURSE_DIR/ -r
+#cp course-python-data-clean/environment.yml $COURSE_DIR/
+cp course-python-data-clean/check_environment.py $COURSE_DIR/
+cd $COURSE_DIR/
+jupyter nbconvert --clear-output _solved/*.ipynb
+./convert_notebooks.sh
+```
+
+
+
+	modified:   check_environment.py
+	modified:   img/JakeVdP-ecosystem2.svg
+	modified:   img/JakeVdP-ecosystem3.svg
+	modified:   img/JakeVdP-ecosystem4.svg
+	modified:   img/JakeVdP-ecosystem5.svg
+	modified:   img/issuetracker.png
+	modified:   img/navigator_notebook.png
+	modified:   img/startup.png
+	modified:   img/work_joris_1.png
+	modified:   img/work_stijn_1.png
+
+
+
+
+
 ## Meta 
 Authors: Joris Van den Bossche, Stijn Van Hoey
